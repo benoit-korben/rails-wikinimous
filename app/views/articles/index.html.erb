@@ -1,0 +1,17 @@
+<nav class="navbar" style="background-color: #e3f2fd;">
+   <div class="container-fluid">
+    <span class="navbar-text">
+      WikiWagon
+    </span>
+    <button type="button" class="btn btn-primary">New article</button>
+  </div>
+</nav>
+
+<div class="container col-6 mt-5">
+    <% @articles.each do |article| %>
+      <div class="text-center text-primary mb-4">
+        <h3><%= article.title %></h3>
+        <p class="text-center text-muted"><%= article.content %></p>
+      </div>
+    <% end %>
+</div>
